@@ -1,7 +1,7 @@
 from multiprocessing import context
 from django.shortcuts import render
 
-from TestDjango.core.form import VehiculoForm
+#from TestDjango.core.form import VehiculoForm
 from .models import Vehiculo
 
 # Create your views here.
