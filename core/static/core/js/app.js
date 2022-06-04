@@ -1,7 +1,5 @@
-
 // Variables
-const baseDeDatos = [
-    {
+const baseDeDatos = [{
         id: 1,
         nombre: 'Pack Herramientas de Cultivo',
         precio: 10.99,
@@ -12,7 +10,7 @@ const baseDeDatos = [
         id: 2,
         nombre: 'Fertilizante Fert Plant',
         precio: 12.23,
-        imagen:'https://sendeyo.com/updownload/file/script/df4f49ac817aef2ec9f13ebe86a1d035.webp'
+        imagen: 'https://sendeyo.com/updownload/file/script/df4f49ac817aef2ec9f13ebe86a1d035.webp'
     },
     {
         id: 3,
@@ -31,22 +29,19 @@ const baseDeDatos = [
         nombre: 'Macetero 50 litros',
         precio: 9.31,
         imagen: 'https://sendeyo.com/updownload/file/script/559f50ca4c5e60006c64a753a97e70e2.webp'
-    }
-    ,
+    },
     {
         id: 6,
         nombre: 'Macetero Geometrico',
         precio: 7.22,
         imagen: 'https://sendeyo.com/updownload/file/script/f2656aebea89458111849e96d4a30aad.webp'
-    }
-    ,
+    },
     {
-        id:7,
+        id: 7,
         nombre: 'Tierra de Hojas 15 litros',
         precio: 6.88,
         imagen: 'https://sendeyo.com/updownload/file/script/062108f862b1457b3d036c60e2e8b88f.webp'
-    }
-    ,
+    },
     {
         id: 8,
         nombre: 'Macetero 10 litros',
@@ -117,7 +112,7 @@ function renderizarProductos() {
 function anyadirProductoAlCarrito(evento) {
     // Anyadimos el Nodo a nuestro carrito
     carrito.push(evento.target.getAttribute('marcador'))
-    // Actualizamos el carrito 
+        // Actualizamos el carrito 
     renderizarCarrito();
 
 }
@@ -206,4 +201,3 @@ DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 // Inicio
 renderizarProductos();
 renderizarCarrito();
-
